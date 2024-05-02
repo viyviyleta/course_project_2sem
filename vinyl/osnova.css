@@ -1,0 +1,560 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+header#mainHeader {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-flow: row nowrap;
+  position: fixed;
+}
+header#mainHeader #menu {
+  display: none;
+}
+header#mainHeader div#mainLogo{
+  margin-left: 20px;
+  height: 6px;
+  width: 3px;
+}
+header#mainHeader div#mainLogo img {
+  width: 60px;
+  margin-left: 0px;
+}
+header#mainHeader nav#mainNav {
+  flex-grow: 1;
+  height: 100%;
+  display: flex;
+  flex-flow: nowrap row;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: "Montserrat-hairline";
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+header#mainHeader nav#mainNav div {
+  width: 300px;
+  text-align: center;
+  font-size: 18px;
+}
+header#mainHeader nav#mainNav div:hover {
+  animation: blink infinite alternate-reverse linear 1s;
+}
+@keyframes blink {
+  from {
+    text-shadow: black 0px 0px 10px;
+  }
+  to {
+    text-shadow: black 0px 0px 0px;
+  }
+}
+nav#mainNav div img {
+  display: none;
+}
+body {
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main #start_tr {
+  margin-left: auto;
+  margin-right: auto;
+}
+div#greetP {
+  background-image: url(src/background/1.jpg);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-size: cover;
+  background-blend-mode: hue;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+#greetP p {
+  color: white;
+  font-size: 16px;
+  margin-top: 40px;
+  text-shadow: black 0px 0px 10px;
+  font-family: "Montserrat-hairline";
+}
+#greetP p#greet span {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  word-spacing: 0px;
+  font-weight: 70;
+  font-family: "Alternates";
+}
+body {
+  background-image: url(src/background/cropped-Music-Record-Vinyl-l.jpg);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+body main #p1 {
+  display: flex;
+  align-self: centers;
+  vertical-align: middle;
+  font-family: "EB+Garamond";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 5vw;
+  line-height: 59px;
+  color: #fefefe;
+  justify-content: center;
+  align-items: center;
+}
+body main #p2 {
+  display: flex;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3vw;
+  line-height: 5vw;
+  color: #fefefe;
+  justify-content: center;
+  align-items: center;
+}
+body main #start_tr {
+  display: flex;
+  width: 27vw;
+  height: 5vw;
+  font-size: 1.5vw;
+  background: rgba(217, 217, 217, 0.7);
+  box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+body main #start_tr a {
+  white-space: nowrap;
+  color: black;
+  text-decoration: none;
+  vertical-align: middle;
+  font-family: "Roboto", sans-serif;
+  line-height: 5vw;
+  margin-left: 1vw;
+}
+body main #start_tr a #arr {
+  width: 2vw;
+  margin-left: 0.5vw;
+  position: relative;
+  top: 0.2vw;
+}
+body main #start_tr a #bag {
+  margin-left: 0.2vw;
+  width: 3vw;
+  position: relative;
+  top: 0.8vw;
+}
+body h2 {
+  font-family: "Alternates";
+  font-weight: 300;
+  color: white;
+  position: relative;
+  margin: 10vw;
+  margin-bottom: 5vw;
+  font-size: 2.5vw;
+  text-align: center;
+  box-sizing: content-box;
+}
+body article {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 4vw;
+}
+body article div {
+  display: flex;
+  margin-left: 9vw;
+  margin-top: 2vw;
+  flex-direction: column;
+  box-sizing: content-box;
+  width: 30vw;
+}
+body article div img {
+  display: block;
+  height: 23vw;
+  z-index: 1;
+}
+body article div div {
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 0;
+  margin-top: 0;
+}
+body article div div p {
+  margin: 0;
+  margin-left: 0.2vw;
+  margin-right: 0.2vw;
+  font-family: Montserrat;
+  font-weight: 300;
+  font-size: 2.5vw;
+  color: black;
+}
+body article div div .cost_ar {
+  font-family: Montserrat-bold;
+  font-size: 2vw;
+  align-self: end;
+}
+body article div div .cost_ar .person_ar {
+  font-size: 1.5vw;
+}
+body article div div .inf_ar {
+  font-weight: 100;
+  font-family: Montserrat-hairline;
+  font-size: 1.5vw;
+  text-align: left;
+}
+body article .dics_ar {
+  transition: 0.5s ease-out;
+  translate: 0 -23vw;
+}
+body article .art:hover .dics_ar {
+  translate: 0 0;
+  transition: 0.5s ease-out;
+  translate: 0 0;
+}
+@media (max-width: 768px) {
+  footer#mainFoot {
+    height: auto;
+  }
+}
+header#mainHeader input[type=checkbox] {
+  display: none;
+}
+@media screen and (max-width: 606px) {
+  body main.active {
+    position: relative;
+    margin-top: 5vw;
+  }
+  body main.active #p1 {
+    display: none;
+  }
+  body main #p1 {
+    font-size: 10vw;
+  }
+  body main #p2 {
+    text-align: center;
+    font-size: 50vw;
+  }
+  body main #start_tr {
+    width: 50vw;
+    height: 10vw;
+  }
+  body main #start_tr a {
+    padding-top: 1.5vw;
+    font-size: 3vw;
+  }
+  body main #start_tr a #arr {
+    width: 3vw;
+  }
+  body main #start_tr a #bag {
+    padding-top: -2vw;
+    width: 4.5vw;
+  }
+  body h2 {
+    margin: 0;
+    margin-top: 10vw;
+    font-size: 4vw;
+  }
+  body article {
+    flex-direction: column;
+    box-sizing: content-box;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body article div {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+  }
+  body article div .dics_ar {
+    translate: 0 0vw;
+  }
+  body article div div .name_ar {
+    font-size: 4vw;
+  }
+  body article div div .cost_ar {
+    font-size: 3vw;
+  }
+  body article div div .cost_ar .person_ar {
+    font-size: 3vw;
+  }
+  body article div div .inf_ar {
+    font-size: 3vw;
+  }
+}
+footer#mainFoot {
+  width: 100%;
+  height: 240px;
+  padding-left: -90px;
+  background-color: rgb(79, 57, 45);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+footer#mainFoot nav#footNav {
+  width: 400px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+}
+footer#mainFoot nav#footNav div {
+  width: 120px;
+  height: 120px;
+  padding: 20px;
+}
+#textlogo {
+  font-family: Alternates;
+  size: 3px;
+}
+footer#mainFoot #footLogo {
+  margin-left: 5px;
+  width: 400px;
+  height: 80px;
+  display: flex;
+}
+footer#mainFoot #footLogo p {
+  display: flex;
+  color: azure;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer#mainFoot #footLogo svg {
+  height: 120px;
+}
+#contactInfo {
+  color: aliceblue;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#contactInfo p {
+  font-family: Montserrat;
+  size: 16px;
+  margin: 5px;
+}
+header#mainHeader input[type=checkbox] {
+  display: none;
+}
+@media (min-width: 768px) {
+  footer#mainFoot {
+    height: auto;
+  }
+  header#mainHeader {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row nowrap;
+    position: absolute;
+  }
+  header#mainHeader nav#mainNav div {
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+@media (max-width: 768px) {
+  header#mainHeader nav#mainNav div {
+    width: 200px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+@media (max-width: 606px) {
+  header#mainHeader {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+  }
+  header#mainHeader div#mainLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  header#mainHeader img#menu {
+    height: 30px;
+    position: absolute;
+    margin: 15px;
+    display: inline;
+  }
+  header#mainHeader #menuButton:checked ~ nav#mainNav {
+    display: flex;
+    flex-direction: column;
+  }
+  header#mainHeader nav#mainNav {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Montserrat;
+  }
+}
+@media (max-width: 606px) {
+  footer#mainFoot {
+    height: auto;
+  }
+  header#mainHeader {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+  }
+  header#mainHeader div#mainLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  header#mainHeader img#menu {
+    height: 30px;
+    position: absolute;
+    margin: 15px;
+    display: inline;
+  }
+  header#mainHeader #menuButton:checked ~ nav#mainNav {
+    display: flex;
+  }
+  header#mainHeader nav#mainNav {
+    background-color: white;
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    flex-flow: row wrap;
+    align-items: center;
+    font-family: Montserrat;
+  }
+  header#mainHeader nav#mainNav div {
+    width: 200px;
+    height: 100px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  nav#mainNav div img {
+    display: block;
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (max-width: 360px) {
+  header#mainHeader {
+    width: 100%;
+    height: 60px;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-flow: row wrap;
+    position: absolute;
+  }
+  header#mainHeader div#mainLogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  header#mainHeader img#menu {
+    height: 30px;
+    position: absolute;
+    margin: 15px;
+    display: inline;
+  }
+  header#mainHeader #menuButton:checked ~ nav#mainNav {
+    display: flex;
+  }
+  header#mainHeader nav#mainNav {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+    display: none;
+    flex-direction: column;
+    flex-flow: row wrap;
+    align-items: center;
+    font-family: Montserrat;
+  }
+  header#mainHeader nav#mainNav div {
+    width: 200px;
+    height: 10px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  nav#mainNav div img {
+    display: block;
+    width: 140px;
+    height: 140px;
+  }
+}
+@media (max-width: 360px) {
+  footer#mainFoot {
+    margin-left: 5px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  footer#mainFoot nav#footNav {
+    margin-left: 10px;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  footer#mainFoot #footLogo {
+    margin-left: 15px;
+    padding-left: 60px;
+    width: 300px;
+  }
+  main#mainContent div.item {
+    width: 100%;
+    padding: 0px;
+  }
+}
+@media (max-width: 575px) {
+  main#mainContent form {
+    width: 300px;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  div#cartPic #greet span {
+    font-size: 30px;
+  }
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(src/fonts/Montserrat-Regular.otf);
+}
+@font-face {
+  font-family: "Montserrat-hairline";
+  src: url(src/fonts/Montserrat-ExtraLight.otf);
+}
+@font-face {
+  font-family: "Montserrat-bold";
+  src: url(./src/fonts/Montserrat-Bold.otf);
+}
+@font-face {
+  font-family: thin;
+  src: url(./src/fonts/Montserrat-Thin.otf);
+}
+@font-face {
+  font-family: Alternates;
+  src: url(./src/fonts/MontserratAlternates-Light.ttf);
+}

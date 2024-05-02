@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+	<player>
+		<name>
+			Crosley Cruiser Deluxe Tweed
+		</name>
+		<color>
+			Кориченвый
+		</color>
+		<price>
+			1049
+		</price>
+	</player>
+	
+	<player>
+		<name>
+			Crosley Voyager Flora
+		</name>
+		<color>
+			Розовый
+		</color>
+		<price>
+			819
+		</price>
+	</player>
+<player>
+		<name>
+			Crosley Mercury Forest Green
+		</name>
+		<color>
+			Зелёный
+		</color>
+		<price>
+			750
+		</price>
+	</player>
+	<player>
+		<name>
+			Crosley Voyager Brown
+		</name>
+		<color>
+			Кориченвый
+		</color>
+		<price>
+			1349
+		</price>
+	</player>
+</content>

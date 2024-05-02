@@ -1,0 +1,121 @@
+main#mainContent {
+    background-color: rgb(129, 89, 78);
+    width: 100%;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto; 
+    gap: 30px;
+    margin-top: 20px; 
+}
+.album {
+    display: flex;
+    width: 500px;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.cover {
+    flex: 0 0 150px;
+    margin-right: 20px;
+}
+.cover img {
+    width: 100%;
+    border-radius: 50%;
+}
+.albumDetails {
+    flex: 1;
+}
+.albumName {
+    font-weight: bold;
+}
+.genre {
+    color: #666;
+}
+main div.item div.cover {
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+div.cover img {
+    width:300px;
+    height: 300px;
+    box-shadow: black 0px 0px 3px;
+}
+main div.item .album {
+    width: 100%;
+}
+main div.item span {
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+main  div.item span.albumName {
+    font-family: Montserrat;
+    font-size: 18px;
+}
+main div.item span.genre {
+    font-family:thin;
+}
+.albumDetails a {
+    margin-top: 15px;
+    margin-left: -15px;
+    text-align: center;
+    font-family: thin;
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: rgb(73, 45, 45);
+    color: white;
+    width: 170px;
+    text-decoration: none;
+    border-radius: 10px;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; 
+    }
+   .album {
+        display: flex;
+        width: 500px;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s, transform 0.3s; 
+    }
+    .album:hover {
+        box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+        transform: translateY(-5px); 
+    }
+    .cover {
+        flex: 0 0 auto; 
+        margin-right: 0; 
+        margin-bottom: 20px;
+    }
+    .albumDetails {
+        flex: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+    .album {
+        flex-direction: column;
+        align-items: center; 
+    }
+    .cover {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}

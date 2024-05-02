@@ -1,0 +1,138 @@
+div#cartPic {
+
+    background-position: 0%;
+    background-size:cover;
+    background-blend-mode:hue;
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+#cartPic p#greet span{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    word-spacing: 0px;
+    font-weight: 70;
+    font-family: 'Alternates';
+}
+main#mainContent {
+    width: 100%;
+    margin-top: -60px;
+    height: fit-content;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:center;
+}
+main#mainContent form {
+    padding: 30px;
+    border-radius: 20px; 
+    background-color: rgba(175, 159, 159, 0.8); 
+    margin: 20px;
+    width: 700px;
+    height: 400px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-between;
+}
+hr {
+    height: 4px;
+    border: 0; 
+    background-image: linear-gradient(to right, transparent, #403232, transparent); 
+    margin: 2px; 
+    width: 100%; 
+}
+form label {
+    font-family: Montserrat-hairline;
+    display: block;
+    font-size: 14px;
+    height: 20px;
+}
+form div {
+    width: 280px;
+    margin: 3px;
+}
+form div span {
+    font-family: Montserrat-hairline;
+    font-size: 16px;
+}
+form div input {
+    width: 100%;
+    height: 30px;
+    font-family: Montserrat;
+}
+form input[type=radio] {
+    width: 16px;
+    height: 16px;
+    margin: 5px;
+    accent-color: black;
+}
+input[type="submit"] {
+    width: 300px; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #af784c; 
+    color: white; 
+    cursor: pointer; 
+}
+form textarea {
+    height: 142px;
+    width: 100%;
+    resize: vertical;
+    max-height: 142px;
+    min-height: 30px;
+    font-family: Montserrat;
+    padding: 5px;
+}
+@media (max-width: 768px) {
+#mainContent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: -60px;
+    margin-bottom: 20px;
+}
+form {
+    width: 300px; 
+    padding: 10px;
+    border-radius: 20px; 
+    background-color: rgba(175, 159, 159, 0.8); 
+}
+div {
+    margin-bottom: 10px; 
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: calc(100% - 40px); 
+    padding: 5px;
+    border-radius: 5px; 
+    border: 1px solid #ccc; 
+}
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 5px; 
+}
+textarea {
+    height: 100px; 
+}
+input[type="submit"] {
+    width: 100%; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #af784c; 
+    color: white; 
+    cursor: pointer; 
+}
+.rad {
+    margin-left: 5px;
+}
+}
