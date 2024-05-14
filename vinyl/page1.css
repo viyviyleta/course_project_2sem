@@ -119,3 +119,52 @@ main div.item span.genre {
         margin-bottom: 20px;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+        gap: 20px; 
+    }
+    .album {
+        width: 100%;
+        padding: 15px;
+        box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); 
+    }
+    .cover {
+        flex: 0 0 100px; 
+        margin-right: 0;
+        margin-bottom: 15px; 
+    }
+    .cover img {
+        width: 100px;
+        height: 100px; 
+    }
+    .albumDetails {
+        flex: 1;
+        text-align: center; 
+    }
+    .albumName {
+        font-size: 16px; 
+    }
+    .genre {
+        font-size: 14px; 
+    }
+    .albumDetails a {
+        margin-top: 10px;
+        padding: 5px 10px;
+        width: 180px; 
+    }
+    main div.item div.cover {
+        height: 400px; 
+    }
+    div.cover img {
+        width: 200px;
+        height: 200px;
+    }
+    main div.item span.albumName {
+        font-size: 16px; 
+    }
+    main div.item span.genre {
+        font-size: 14px;
+    }
+}

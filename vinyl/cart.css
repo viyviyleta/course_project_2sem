@@ -1,5 +1,4 @@
 div#cartPic {
-
     background-position: 0%;
     background-size:cover;
     background-blend-mode:hue;
@@ -90,6 +89,16 @@ form textarea {
     padding: 5px;
 }
 @media (max-width: 768px) {
+    header#mainHeader nav#mainNav {
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        flex-flow: nowrap row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: "Montserrat-hairline";
+      }
+    
 #mainContent {
     display: flex;
     justify-content: center;
@@ -111,7 +120,7 @@ input[type="text"],
 input[type="tel"],
 input[type="email"],
 textarea {
-    width: calc(100% - 40px); 
+    width: calc(100% - 70px); 
     padding: 5px;
     border-radius: 5px; 
     border: 1px solid #ccc; 
@@ -124,7 +133,7 @@ textarea {
     height: 100px; 
 }
 input[type="submit"] {
-    width: 100%; 
+    width:40%; 
     padding: 10px; 
     border: none; 
     border-radius: 5px; 
@@ -134,5 +143,32 @@ input[type="submit"] {
 }
 .rad {
     margin-left: 5px;
+    width:40%;
 }
+}
+@media (max-width: 575px) {
+
+input[type="submit"] {
+    width:100%; 
+    padding: 10px; 
+    border: none; 
+    border-radius: 5px; 
+    background-color: #af784c; 
+    color: white; 
+    cursor: pointer; 
+}
+
+}
+
+@media (max-width: 646px) {
+    header#mainHeader nav#mainNav {
+        flex-grow: 1;
+        height: 100%;
+        display: flex;
+        margin-top: -10px;
+        flex-flow: nowrap row;
+        align-items: center;
+        justify-content: space-evenly;
+        font-family: "Montserrat-hairline";
+      }
 }

@@ -17,11 +17,10 @@ function Sim(sldrId) {
 };
 
 Sim.defaults = {
-	loop: true,     
+	loop: true,    //зацикливание слайдов 
 	auto: true,     
 	interval: 5000, 
-	arrows: true,   
-	dots: true      
+	arrows: true,        
 };
 
 Sim.prototype.elemPrev = function(num) {
@@ -68,14 +67,6 @@ Sim.prototype.elemNext = function(num) {
 	}
 };
 
-Sim.prototype.dotOn = function(num) {
-	this.indicatorDotsAll[num].style.cssText = 'background-color:#BBB; cursor:pointer;'
-};
-
-Sim.prototype.dotOff = function(num) {
-	this.indicatorDotsAll[num].style.cssText = 'background-color:#556; cursor:default;'
-};
-
 Sim.initialize = function(that) {
 
 	that.elemCount = that.sldrElements.length; 
@@ -93,11 +84,6 @@ Sim.initialize = function(that) {
 				bgTime = fnTime; that.elemNext()
 			}
 		}, that.options.interval)
-	};
-
-	if(that.elemCount <= 1) {  
-		that.options.auto = false; that.options.arrows = false; that.options.dots = false;
-		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
 	};
 	if(that.elemCount >= 1) {  
 		that.sldrElemFirst.style.opacity = '1';
@@ -130,7 +116,4 @@ Sim.initialize = function(that) {
 	else {
 		that.leftArrow.style.display = 'none'; that.rightArrow.style.display = 'none'
 	};
-
 };
-
-new Sim();

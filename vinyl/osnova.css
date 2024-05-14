@@ -37,7 +37,9 @@ a {
   color: inherit;
 }
 header#mainHeader nav#mainNav div {
-  width: 300px;
+  width: 200px;
+  height: 60px;
+  margin: 5px;
   text-align: center;
   font-size: 18px;
 }
@@ -52,9 +54,7 @@ header#mainHeader nav#mainNav div:hover {
     text-shadow: black 0px 0px 0px;
   }
 }
-nav#mainNav div img {
-  display: none;
-}
+
 body {
   background-size: 100% 100%;
   background-position: center;
@@ -102,7 +102,6 @@ body main #p1 {
   display: flex;
   align-self: centers;
   vertical-align: middle;
-  font-family: "EB+Garamond";
   font-style: italic;
   font-weight: 400;
   font-size: 5vw;
@@ -113,7 +112,6 @@ body main #p1 {
 }
 body main #p2 {
   display: flex;
-  font-family: "Roboto", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 3vw;
@@ -153,7 +151,7 @@ body main #start_tr a #bag {
   top: 0.8vw;
 }
 body h2 {
-  font-family: "Alternates";
+  font-family: Alternates;
   font-weight: 300;
   color: white;
   position: relative;
@@ -223,14 +221,7 @@ body article .art:hover .dics_ar {
   transition: 0.5s ease-out;
   translate: 0 0;
 }
-@media (max-width: 768px) {
-  footer#mainFoot {
-    height: auto;
-  }
-}
-header#mainHeader input[type=checkbox] {
-  display: none;
-}
+
 @media screen and (max-width: 606px) {
   body main.active {
     position: relative;
@@ -364,18 +355,20 @@ header#mainHeader input[type=checkbox] {
   }
   header#mainHeader nav#mainNav div {
     width: 200px;
+    height: 60px;
+    padding-top: 7px;
     text-align: center;
     font-size: 18px;
   }
 }
-@media (max-width: 768px) {
-  header#mainHeader nav#mainNav div {
-    width: 200px;
-    text-align: center;
-    font-size: 18px;
+@media (min-width: 648px) {
+  footer#mainFoot {
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
   }
 }
-@media (max-width: 606px) {
+@media (max-width: 646px) {
   header#mainHeader {
     width: 100%;
     height: 60px;
@@ -399,6 +392,10 @@ header#mainHeader input[type=checkbox] {
   header#mainHeader #menuButton:checked ~ nav#mainNav {
     display: flex;
     flex-direction: column;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    justify-content: center;
   }
   header#mainHeader nav#mainNav {
     background-color: white;
@@ -411,7 +408,7 @@ header#mainHeader input[type=checkbox] {
     font-family: Montserrat;
   }
 }
-@media (max-width: 606px) {
+@media (max-width: 646px) {
   footer#mainFoot {
     height: auto;
   }
@@ -449,10 +446,12 @@ header#mainHeader input[type=checkbox] {
   }
   header#mainHeader nav#mainNav div {
     width: 200px;
-    height: 100px;
+    height: 60px;
+    margin: 10px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
   }
   nav#mainNav div img {
     display: block;
@@ -487,7 +486,7 @@ header#mainHeader input[type=checkbox] {
   header#mainHeader nav#mainNav {
     background-color: white;
     width: 100%;
-    height: 150px;
+    height: 160px;
     display: none;
     flex-direction: column;
     flex-flow: row wrap;
@@ -496,10 +495,11 @@ header#mainHeader input[type=checkbox] {
   }
   header#mainHeader nav#mainNav div {
     width: 200px;
-    height: 10px;
+    height: 30px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
+    justify-content: center;
   }
   nav#mainNav div img {
     display: block;
@@ -509,7 +509,6 @@ header#mainHeader input[type=checkbox] {
 }
 @media (max-width: 360px) {
   footer#mainFoot {
-    margin-left: 5px;
     height: -moz-fit-content;
     height: fit-content;
   }
@@ -538,6 +537,59 @@ header#mainHeader input[type=checkbox] {
     font-size: 30px;
   }
 }
+@media (max-width: 349px) {
+  footer#mainFoot {
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+  }
+
+  footer#mainFoot #footContent {
+    align-items: center;
+  }
+
+  footer#mainFoot #footLogo {
+    flex-direction: column;
+    align-content: center;
+    margin-bottom: 10px;
+  }
+
+  footer#mainFoot #footLogo img {
+    height: 50px; /* уменьшение размера логотипа */
+  }
+
+  footer#mainFoot #footLogo p {
+    font-size: 12px; /* уменьшение размера шрифта */
+    text-align: center;
+  }
+
+  footer#mainFoot nav#footNav {
+    flex-direction: row;
+    margin-left: -20px;
+    margin-top: -40px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  footer#mainFoot nav#footNav div {
+    margin: 10px;
+    width: 40px;
+    height: 40px; 
+  }
+  footer#mainFoot nav#footNav div a svg {
+    height: 30px; /* уменьшение размера иконок */
+    width: 30px;
+  }
+
+  #contactInfo {
+    text-align: center;
+  }
+
+  #contactInfo p {
+    font-size: 12px; /* уменьшение размера шрифта */
+  }
+}
+
 @font-face {
   font-family: "Montserrat";
   src: url(src/fonts/Montserrat-Regular.otf);

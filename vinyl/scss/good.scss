@@ -1,216 +1,316 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  .container {
-    background-color: #fff;
-  }
-  #mainHeader {
-    margin-top: -15px;
-    background-color: #333;
-    color: #000000;
-    padding: 10px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  #backButton {
-    font-family: Alternates;
-    padding: 5px 10px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s;
-  }
-  #closeButton {
-    font-family: Alternates;
-    padding: 5px 10px;
-    cursor: pointer;
-    opacity: 0.7;
-    transition: opacity 0.3s;
-    &:hover {
-      border-radius: 50%;
-      color: #fff;
-      background-color: #6b4747;
-      opacity: 1;
-    }
-  }
-  #backButton {
-    &:hover {
-      border-radius: 20px;
-      color: #fff;
-      background-color: #6b4747;
-      opacity: 1;
-    }
-    position: absolute;
-    left: 10px;
-  }
-  #closeButton {
-    position: absolute;
-    right: 10px;
-  }
-  .container {
-    display: flex;
-    padding-top: 40px;
-  }
-  .photo, .text {
-    flex: 1;
-    margin: 10px;
-  }
-  .photo {
-    margin-left: 40px;
-    padding: auto;
-    width: 700px;
-    height: 600px;
-    flex-wrap: wrap;
-    img {
-      margin-left: 30px;
-      max-width: 90%;
-      max-height: 90%;
-    }
-  }
-  .text {
-    margin-left: 10px;
-    width: 700px;
-    height: 600px;
-  }
-  .button {
-    display: block;
-    margin: 5px;
-  }
-  .sale {
-    font-family: Alternates;
-    background-color: #4b3131;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #fff;
+}
+
+#mainHeader {
+  margin-top: -15px;
+  background-color: #333;
+  color: #000000;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#backButton {
+  font-family: Alternates;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+#closeButton {
+  font-family: Alternates;
+  padding: 5px 10px;
+  cursor: pointer;
+  opacity: 0.7;
+  transition: opacity 0.3s;
+
+  &:hover {
+    border-radius: 50%;
     color: #fff;
+    background-color: #6b4747;
+    opacity: 1;
+  }
+}
+
+#backButton {
+  position: absolute;
+  left: 10px;
+
+  &:hover {
     border-radius: 20px;
-    padding: 10px 50px;
-    border: none;
-    cursor: pointer;
-    &:hover {
-      background-color: #6b5050;
-    }
+    color: #fff;
+    background-color: #6b4747;
+    opacity: 1;
   }
-  h3, strong {
-    text-align: center;
-    font-family: Montserrat;
-    size: 60px;
-    padding-bottom: 10px;
-    font-weight: 7px;
+}
+
+#closeButton {
+  position: absolute;
+  right: 10px;
+}
+
+.container {
+  display: flex;
+  padding-top: 40px;
+}
+
+.photo, .text {
+  flex: 1;
+  margin: 10px;
+}
+
+.photo {
+  margin-left: 40px;
+  padding: auto;
+  width: 700px;
+  height: 600px;
+  flex-wrap: wrap;
+
+  img {
+    margin-left: 30px;
+    max-width: 90%;
+    max-height: 90%;
   }
-  p {
-    font-weight: 3px;
-    font-family: Alternates;
+}
+
+.text {
+  margin-left: 10px;
+  width: 700px;
+  height: 600px;
+}
+
+.button {
+  display: block;
+  margin: 5px;
+}
+
+.sale {
+  font-family: Alternates;
+  background-color: #4b3131;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 50px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #6b5050;
   }
-  .vinyl-info {
-    padding: 20px;
-  }
-  #list {
-    padding-top: 10px;
-    text-align: center;
-  }
-  .track-columns {
-    display: flex;
-    justify-content: center;
-  }
-  ol {
-    li {
-      list-style: none;
-      size: 5px;
-      font-family: thin;
-    }
-    :first-child {
-      font-family: Montserrat-bold;
-      font-weight: -2px;
-      margin-bottom: 5px;
-    }
-  }
-  .column {
-    flex: 1;
-    text-align: center;
-  }
-  .track-list li {
+}
+
+h3, strong {
+  text-align: center;
+  font-family: Montserrat;
+  size: 60px;
+  padding-bottom: 10px;
+  font-weight: 7px;
+}
+
+p {
+  font-weight: 3px;
+  font-family: Alternates;
+}
+
+.vinyl-info {
+  padding: 20px;
+}
+
+#list {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.track-columns {
+  display: flex;
+  justify-content: center;
+}
+
+ol {
+  li {
     list-style: none;
+    size: 5px;
+    font-family: thin;
+  }
+
+  :first-child {
+    font-family: Montserrat-bold;
+    font-weight: -2px;
     margin-bottom: 5px;
   }
-  img {
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+.track-list li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+.sim-slider {
+  position: relative;
+  max-width: 900px;
+  min-width: 320px;
+  margin: 20px auto;
+  padding: 30px 50px;
+}
+
+.sim-slider-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.sim-slider-element {
+  width: 100%;
+  height: 500px;
+  transition: opacity 0.5s ease-in;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+.sim-slider-arrow-left, .sim-slider-arrow-right {
+  width: 22px;
+  height: 40px;
+  position: absolute;
+  top: 170%;
+  transform: translateY(210%);
+  cursor: pointer;
+  opacity: 0.6;
+  z-index: 4;
+}
+
+.sim-slider-arrow-left {
+  left: 40px;
+  background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+}
+
+.sim-slider-arrow-right {
+  right: 30px;
+  background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+}
+
+div {
+  &.sim-slider-arrow-left:hover, &.sim-slider-arrow-right:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .sim-slider-arrow-left, .sim-slider-arrow-right {
+    transform: translateY(100%);
+  }
+
+  .sim-slider-arrow-left {
+    left: 30px;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+
+  .sim-slider-arrow-right {
+    right: -20px;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+
+  h3, strong {
+    font-size: 16px;
+  }
+
+  p, ol li, #backButton, #closeButton {
+    font-size: 12px;
+  }
+
+  .sale {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+
+  .photo {
+    width: 90%;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .text {
+    padding-left: 10px;
+  }
+
+  .photo img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .text {
+    width: 90%;
+    margin: 10px auto;
+  }
+}
+
+@media (max-width: 600px) {
+  .sim-slider-arrow-left, .sim-slider-arrow-right {
+    transform: translateY(190%);
+  }
+
+  .sim-slider-arrow-left {
+    left: 30px;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
+  }
+
+  .sim-slider-arrow-right {
+    right: -30px;
+    background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .photo {
+    width: 90%;
+    margin: 10px 0;
+    margin-bottom: 20px;
+  }
+
+  .text {
     width: 100%;
+    margin-top: 65%;
   }
-  .sim-slider {
-    max-width: 900px;
-    min-width: 320px;
-    margin: 20px auto;
-    padding: 30px 50px;
-    position: relative;
+
+  #backButton:hover {
+    border-radius: 20px;
+    background-color: #929191;
+    opacity: 1;
   }
-  .sim-slider-list {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+
+  #closeButton:hover {
+    border-radius: 50%;
+    background-color: #929191;
+    opacity: 1;
   }
-  .sim-slider-element {
-    width: 100%;
-    height: 500px;
-    transition: opacity 0.5s ease-in;
-    opacity: 0;
-    position: absolute;
-    z-index: 2;
-    left: 0;
-    top: 0;
-    display: block;
-  }
-  div {
-    &.sim-slider-arrow-left, &.sim-slider-arrow-right {
-      width: 22px;
-      height: 40px;
-      position: absolute;
-      margin-top: 180px;
-      cursor: pointer;
-      opacity: 0.6;
-      z-index: 4;
-    }
-   &.sim-slider-arrow-left {
-      left: 30px;
-      top: 40%;
-      display: block;
-      background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-left.png") no-repeat;
-    }
-    &.sim-slider-arrow-right {
-      right: 30px;
-      top: 40%;
-      display: block;
-      background: url("http://pvbk.spb.ru/inc/slider/sim-files/sim-arrow-right.png") no-repeat;
-    }
-    &.sim-slider-arrow-left:hover, &.sim-slider-arrow-right:hover {
-      opacity: 1.0;
-    }
-  }
-  @media (max-width: 600px) {
-    .container {
-      flex-direction: column;
-    }
-    .photo {
-      width: 100%;
-      margin: 10px 0;
-    }
-    .text {
-      width: 100%;
-      margin: 350px auto;
-    }
-    #backButton:hover {
-      border-radius: 20px;
-      background-color: #929191;
-      opacity: 1;
-    }
-    #closeButton:hover {
-      border-radius: 50%;
-      background-color: #929191;
-      opacity: 1;
-    }
-  }
+}
